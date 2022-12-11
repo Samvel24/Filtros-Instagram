@@ -1,4 +1,4 @@
-# Instagram filters using Computer Vision
+# Instagram Filters Using Computer Vision
  
 Creating Instagram-like filters using Java and OpenCV (With the help of the tutorial: https://www.youtube.com/watch?v=R6wgJ6epakU made by [Gabriela Solano](https://github.com/GabySol))
  
@@ -10,7 +10,7 @@ In order to run this project it is necessary to install OpenCV version 4.6.0 in 
 * Goal: The objective of this project is to try to understand how the filters used by the Instagram social network work, such as those in which personal items are added to the user's face (glasses, hats, etc.) as well as provide some functionalities that are not present in the OpenCV 4.6 package for Java.
 
 * Theoretical framework:
-The Haar-Like features receive their name due to the similarity they have with the Haar wavelets introduced in [1], this feature considers two adjacent rectangular regions in an image, in these regions the difference between the sum of all the pixels is calculated. of each one. Adjacent regions are the same size and shape. Characteristics of 3 rectangles and 4 rectangles [2] are also considered, in the first of these the sum of two outer rectangles is calculated and from this value the sum of the pixels within a central rectangle is subtracted, in that of 4 rectangles the difference between diagonal pairs of rectangles is performed. The mentioned regions are shown in the following figure.
+The Haar-Like features receive their name due to the similarity they have with the Haar wavelets introduced in [1], this feature considers two adjacent rectangular regions in an image, in these regions the difference between the sum of all the pixels is calculated of each one. Adjacent regions are the same size and shape. Characteristics of 3 rectangles and 4 rectangles [2] are also considered, in the first of these the sum of two outer rectangles is calculated and from this value the sum of the pixels within a central rectangle is subtracted, in that of 4 rectangles the difference between diagonal pairs of rectangles is performed. The mentioned regions are shown in the following figure.
 
     ![Fugure 1](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Figura1.png)
     **Figure 1. Haar features of 2, 3 and 4 rectangles respectively**

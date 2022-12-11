@@ -1,4 +1,4 @@
-# Instagram Filters Using Computer Vision
+# Instagram filters using Computer Vision
  
 Creating Instagram-like filters using Java and OpenCV (With the help of the tutorial: https://www.youtube.com/watch?v=R6wgJ6epakU made by [Gabriela Solano](https://github.com/GabySol))
  
@@ -22,12 +22,12 @@ The above is important because it will allow us to detect the eyes and the face 
 
 ### Contributions added to this project
 * Use of the StretchIcon class so that the camera image is displayed completely inside the JLabel (and according to the size of the JLabel) and in this way simulate the use of the flags:
-• WINDOW_KEEPRATIO
-• WND_PROP_ASPECT_RATIO
+* WINDOW_KEEPRATIO
+* WND_PROP_ASPECT_RATIO
 described in https://docs.opencv.org/4.x/d0/d90/group__highgui__window__flags.html
 Note: At this time, these flags are not available in the OpenCV 4.6 package for Java.
-
-To complement what was previously described, a sequence of processes similar to the one provided by HighGui.imshow() and HighGui.waitKey() was used to be able to resize the image inside the JLabel object and that will allow us to visualize the camera image with the best possible quality.
+    
+    To complement what was previously described, a sequence of processes similar to the one provided by HighGui.imshow() and HighGui.waitKey() was used to be able to resize the image inside the JLabel object and that will allow us to visualize the camera image with the best possible quality.
 
 * The functionality of adding lenses in the area of the detected eyes with the help of the CascadeClassifier class has been implemented.
 
@@ -36,8 +36,8 @@ To complement what was previously described, a sequence of processes similar to 
 * Presentation video: https://linkedin.com
 
 ### References
-[1] Haar, A., Zur theorie der orthogonalen funktionensysteme. Mathematische Annalen, 1910.
-[2] Viola, P., Jones, M., Rapid object detection using a boosted cascade of simple features, IEEE Conf. on Computer Vision and Pattern Recognition, 2001.
+* [1] Haar, A., Zur theorie der orthogonalen funktionensysteme. Mathematische Annalen, 1910.
+* [2] Viola, P., Jones, M., Rapid object detection using a boosted cascade of simple features, IEEE Conf. on Computer Vision and Pattern Recognition, 2001.
 
 ***
 

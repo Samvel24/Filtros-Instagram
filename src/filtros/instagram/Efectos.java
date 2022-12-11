@@ -200,26 +200,27 @@ public class Efectos
     
     private void deteccionyEfectos(Mat frame)
     {
-        /*Mat imagenAgregada = Imgcodecs.imread("gorra.png", 
+        String folder = "ImagenesEjemplo\\";
+        /*Mat imagenAgregada = Imgcodecs.imread(folder + "gorra.png", 
                 Imgcodecs.IMREAD_UNCHANGED);
-        /*Mat imagenAgregada = Imgcodecs.imread("gorro_navidad.png", 
+        /*Mat imagenAgregada = Imgcodecs.imread(folder + "gorro_navidad.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        /*Mat imagenAgregada = Imgcodecs.imread("gorro_azul_marino.png", 
+        /*Mat imagenAgregada = Imgcodecs.imread(folder + "gorro_azul_marino.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        /*Mat imagenAgregada = Imgcodecs.imread("sombrero_cafe.png", 
+        /*Mat imagenAgregada = Imgcodecs.imread(folder + "sombrero_cafe.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        Mat imagenAgregada = Imgcodecs.imread("sombrero_gris.png", 
+        Mat imagenAgregada = Imgcodecs.imread(folder + "sombrero_gris.png", 
                 Imgcodecs.IMREAD_UNCHANGED);
         
-        /*Mat lentesAgregados = Imgcodecs.imread("lentesNegros.png", 
+        /*Mat lentesAgregados = Imgcodecs.imread(folder + "lentesNegros.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        /*Mat lentesAgregados = Imgcodecs.imread("lentesFiesta.png", 
+        /*Mat lentesAgregados = Imgcodecs.imread(folder + "lentesFiesta.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        /*Mat lentesAgregados = Imgcodecs.imread("lentesVerdes.png", 
+        /*Mat lentesAgregados = Imgcodecs.imread(folder + "lentesVerdes.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        /*Mat lentesAgregados = Imgcodecs.imread("lentesAzules.png", 
+        /*Mat lentesAgregados = Imgcodecs.imread(folder + "lentesAzules.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
-        Mat lentesAgregados = Imgcodecs.imread("lentes2023.png", 
+        Mat lentesAgregados = Imgcodecs.imread(folder + "lentes2023.png", 
                 Imgcodecs.IMREAD_UNCHANGED);
        
         Mat frameGray = new Mat();
@@ -308,7 +309,7 @@ public class Efectos
                 Mat auxLentes = frame.submat(zonaLentes);
                 Mat frameLentes = new Mat(auxLentes.rows(), auxLentes.cols(), auxLentes.type());
                 auxLentes.copyTo(frameLentes);
-                //Imgcodecs.imwrite("ResultLentes.jpg", auxLentes);
+                //Imgcodecs.imwrite(folder + "ResultLentes.jpg", auxLentes);
                 
                 /* Redimensionamos la imagen .png de los lentes que deseamos agregar
                 al tamaño del objeto Mat 'auxLentes'
@@ -348,7 +349,7 @@ public class Efectos
                 // Sumamos las 2 imágenes obtenidas anteriormente
                 Mat resultLentes = new Mat();
                 Core.add(fondoNegro2, frameFondo, resultLentes);
-                //Imgcodecs.imwrite("ResultLentes.jpg", resultLentes);
+                //Imgcodecs.imwrite(folder + "ResultLentes.jpg", resultLentes);
                 
                 int i, j;
                 int m, n;

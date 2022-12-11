@@ -1,0 +1,23 @@
+#Fuentes: https://github.com/github/gitignore/blob/master/Java.gitignore; https://github.com/github/gitignore/blob/master/Global/NetBeans.gitignore
+# https://stackoverflow.com/questions/2586097/what-should-be-in-gitignore-file-for-a-netbeans-java-project
+
+# Compiled class file
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#Imagen de ayuda
+diagrama.png
+
+
+#Netbeans config
+nbproject/private/
+build/
+dist/

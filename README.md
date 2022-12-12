@@ -12,7 +12,7 @@ In order to run this project it is necessary to install OpenCV version 4.6.0 in 
 * Theoretical framework:
 The Haar-Like features receive their name due to the similarity they have with the Haar wavelets introduced in [1], this feature considers two adjacent rectangular regions in an image, in these regions the difference between the sum of all the pixels is calculated of each one. Adjacent regions are the same size and shape. Characteristics of 3 rectangles and 4 rectangles [2] are also considered, in the first of these the sum of two outer rectangles is calculated and from this value the sum of the pixels within a central rectangle is subtracted, in that of 4 rectangles the difference between diagonal pairs of rectangles is performed. The mentioned regions are shown in the following figure.
 
-    ![Fugure 1](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Figura1.png)
+    ![Figure 1](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Figura1.png)
     **Figure 1. Haar features of 2, 3 and 4 rectangles respectively**
 
     In [2] these characteristics are used to detect faces and the integral image is used to calculate them quickly. An example of using these features is shown in figure 2, in this example, the difference in intensity between the eye region and the nose region is measured. Accordingly, these characteristics allow to categorize small sections of an image and, in the case of figure 2, to classify some features of the face.
@@ -36,8 +36,13 @@ The Haar-Like features receive their name due to the similarity they have with t
 * The functionality of adding lenses in the area of the detected eyes with the help of the CascadeClassifier class has been implemented.
 
 ### Screenshots
+    ![Captura 1](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura1.png)
+    ![Captura 2](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura2.png)
+    ![Captura 3](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura3.png)
+    ![Captura 4](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura4.png)
+    ![Captura 5](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura5.png)
 
-* Presentation video: https://linkedin.com
+* Presentation video: https://www.linkedin.com/feed/update/urn:li:ugcPost:7007905798953590784/
 
 ### References
 * [1] Haar, A., Zur theorie der orthogonalen funktionensysteme. Mathematische Annalen, 1910.

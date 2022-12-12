@@ -17,7 +17,9 @@ import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
+import org.opencv.core.Point;
 import org.opencv.core.Rect;
+import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.highgui.HighGui;
 
@@ -70,7 +72,7 @@ public class Efectos
         */
         StretchIcon icon = new StretchIcon(HighGui.toBufferedImage(frame));
         JLabel jLabel = new JLabel(icon); // Área de visualización para una cadena de texto corta o una imagen, o ambos
-        jLabel.setPreferredSize(new Dimension(640, 480));
+        jLabel.setPreferredSize(new Dimension(740, 580));
         iW.setFrameLabelVisible(jFrame, jLabel);
         ventanas.put(nombreVentana, iW);
                 
@@ -79,6 +81,7 @@ public class Efectos
             System.exit(0);
         }
 
+        int cont = 0;
         while(true) {
             capture.read(frame);
             if(frame.empty()) {
@@ -86,7 +89,18 @@ public class Efectos
             }
             
             Core.flip(frame, frame, 1); // Volteo horizontal de la imagen -->> flipCode > 0
+            
+            // if() para añadir el texto "Comenzando deteccion"
+            /*if(cont < 130) {
+                Imgproc.putText(frame, "Comenzando deteccion...", new Point(50, 50), 
+                        Imgproc.FONT_HERSHEY_SIMPLEX, 0.7, 
+                        new Scalar(0, 255, 0), 2);
+            }
+            else*/ // dentro de este else va la instrucción: deteccionyEfectos(frame);
+            //{
             deteccionyEfectos(frame);
+            //}
+            //cont++;
             ImageWindow temp = ventanas.get(nombreVentana);
             temp.setMat(frame);
             icon = new StretchIcon(HighGui.toBufferedImage(temp.img));
@@ -202,7 +216,7 @@ public class Efectos
     {
         String folder = "ImagenesEjemplo\\";
         /*Mat imagenAgregada = Imgcodecs.imread(folder + "gorra.png", 
-                Imgcodecs.IMREAD_UNCHANGED);
+                Imgcodecs.IMREAD_UNCHANGED);*/
         /*Mat imagenAgregada = Imgcodecs.imread(folder + "gorro_navidad.png", 
                 Imgcodecs.IMREAD_UNCHANGED);*/
         /*Mat imagenAgregada = Imgcodecs.imread(folder + "gorro_azul_marino.png", 

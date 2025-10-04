@@ -41,4 +41,4 @@ The Haar-Like features receive their name due to the similarity they have with t
 
 ***
 
-2022 [Samuel Ramirez](https://github.com/Samvel24/)
+2022 [Samuel Ramirez](https://github.com/Samuel24Z)

@@ -35,19 +35,6 @@ The Haar-Like features receive their name due to the similarity they have with t
 
 * The functionality of adding lenses in the area of the detected eyes with the help of the CascadeClassifier class has been implemented.
 
-### Screenshots
-![Captura 1](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura1.png)
-
-![Captura 2](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura2.png)
-
-![Captura 3](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura3.png)
-
-![Captura 4](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura4.png)
-
-![Captura 5](https://github.com/Samvel24/Filtros-Instagram/blob/master/ImagenesEjemplo/Captura5.png)
-
-* Presentation video: https://www.linkedin.com/feed/update/urn:li:ugcPost:7007905798953590784/
-
 ### References
 * [1] Haar, A., Zur theorie der orthogonalen funktionensysteme. Mathematische Annalen, 1910.
 * [2] Viola, P., Jones, M., Rapid object detection using a boosted cascade of simple features, IEEE Conf. on Computer Vision and Pattern Recognition, 2001.
